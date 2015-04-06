@@ -1,119 +1,18 @@
-if myHero.charName ~= "Karthus" then return end
+if myHero.charName ~= "Lulu" then return end
 
-assert(load(Base64Decode("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"), nil, "bt", _ENV))() ScriptStatus("XKNLNOKKOQK")
+assert(load(Base64Decode("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"), nil, "bt", _ENV))() ScriptStatus("VILJMOOPHPH") 
 
---[[
-
-v. 1.02
-
-Q Farming
-
-
-v. 1.03
-
-Add ManaManager
-
-
-v. 1.04
-
-Add KillSteal Mark
-
-E Fix
-
-
-v. 1.05
-
-Add Harass Key (Not Toggle)
-
-Add Harass E
-
-E Fix
-
-Fix Q Farming ( not perfect )
-
-Fix harass to dead ts.target
-
-Now you not harass when recall
-
-
-v. 1.06
-
-Delete Q manaManager In Combo
-
-
-v. 1.10
-
-Add Dpred
-
-Bug Fix
-
-
-v 1.12
-
-Fix KillMark
-
-Now You can Combo in Dead Passive
-
-Fix Error
-
-
-v. 1.13
-
-Damage Manager
-
-
-v. 1.15
-
-Auto downLoad DPred
-
-
-v 1.16
-
-Fix AutoDownload
-
-Fix KillMark, now you can see stat (Can, Cant, Dead)
-
-
-v, 1.17
-
-Add OrbWalk Checker
-
-
-v, 1.18
-
-Farming Fix
-
-
-v. 1.21
-
-Add Menu Auto E Off
-
-
-v. 1.24
-
-Fix OrbWalk
-
-
-v. 1.27
-v. 1.28
-]]
-
-
-
-
-local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>SEAN Karthus:</b></font> <font color=\"#FFFFFF\">"..msg..".</font>") end
-local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>Welcome " .. GetUser() .. " Auth Successed By http://seanlol.com Have Good Game. </b>")end
-
-
-local version = 1.28
+local version = 1.04
 local AUTO_UPDATE = true
 local UPDATE_HOST = "raw.github.com"
-local UPDATE_PATH = "/seanlol/bol/master/SEAN Karthus.lua".."?rand="..math.random(1,10000)
-local UPDATE_FILE_PATH = LIB_PATH.."SEAN Karthus.lua"
+local UPDATE_PATH = "/seanlol/bol/master/SEAN Lulu.lua".."?rand="..math.random(1,10000)
+local UPDATE_FILE_PATH = LIB_PATH.."SEAN Lulu.lua"
 local UPDATE_URL = "https://"..UPDATE_HOST..UPDATE_PATH
 
+local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>SEAN Lulu:</b></font> <font color=\"#FFFFFF\">"..msg..".</font>") end
+local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>Welcome " .. GetUser() .. " Auth Successed By http://seanlol.com Have Good Game. </b>")end
 if AUTO_UPDATE then
-	local ServerData = GetWebResult(UPDATE_HOST, "/seanlol/bol/master/SEAN Karthus.version")
+	local ServerData = GetWebResult(UPDATE_HOST, "/seanlol/bol/master/version/SEAN Lulu.version")
 	if ServerData then
 		ServerVersion = type(tonumber(ServerData)) == "number" and tonumber(ServerData) or nil
 		if ServerVersion then
@@ -130,303 +29,217 @@ if AUTO_UPDATE then
 	end
 end
 
-local SCRIPT_LIBS = {
-	["SourceLib"] = "https://raw.github.com/LegendBot/Scripts/master/Common/SourceLib.lua",
-	["VPrediction"] = "https://raw.github.com/LegendBot/Scripts/master/Common/VPrediction.lua",
-	["DivinePred"] = "http://divinetek.rocks/divineprediction/DivinePred.lua"
+require 'VPrediction'
+require 'SxOrbWalk'
+require 'sourceLib'
+
+local HPred, SxO, STS = nil, nil, nil
+local ts
+local Qrance, Wrance, Erance, Rrance = 950, 650, 650, 900 
+local Config = nil
+local player = myHero
+local enemyHeroes = GetEnemyHeroes()
+local allyHeroes = GetAllyHeroes()
+local enemyMinions = minionManager(MINION_ENEMY, 1500, myHero, MINION_SORT_MAXHEALTH_DEC)
+local jungleMinions = minionManager(MINION_JUNGLE, 1500, myHero, MINION_SORT_MAXHEALTH_DEC)
+
+local InterruptList = {
+    { charName = "Caitlyn", spellName = "CaitlynAceintheHole"},
+    { charName = "FiddleSticks", spellName = "Crowstorm"},
+    { charName = "FiddleSticks", spellName = "DrainChannel"},
+    { charName = "Galio", spellName = "GalioIdolOfDurand"},
+    { charName = "Karthus", spellName = "FallenOne"},
+    { charName = "Katarina", spellName = "KatarinaR"},
+    { charName = "Lucian", spellName = "LucianR"},
+    { charName = "Malzahar", spellName = "AlZaharNetherGrasp"},
+    { charName = "MissFortune", spellName = "MissFortuneBulletTime"},
+    { charName = "Nunu", spellName = "AbsoluteZero"},
+    { charName = "Pantheon", spellName = "Pantheon_GrandSkyfall_Jump"},
+    { charName = "Shen", spellName = "ShenStandUnited"},
+    { charName = "Urgot", spellName = "UrgotSwap2"},
+    { charName = "Varus", spellName = "VarusQ"},
+    { charName = "Warwick", spellName = "InfiniteDuress"}
 }
-function Initiate()
-	for LIBRARY, LIBRARY_URL in pairs(SCRIPT_LIBS) do
-		if FileExist(LIB_PATH..LIBRARY..".lua") then
-			require(LIBRARY)
-		else
-			DOWNLOADING_LIBS = true
-			if LIBRARY == "DivinePred" then
-				AutoupdaterMsg("Missing Library! Downloading "..LIBRARY..". If the library doesn't download, please download it manually.")
-				DownloadFile("http://divinetek.rocks/divineprediction/DivinePred.lua", LIB_PATH.."DivinePred.lua",function() AutoupdaterMsg("Successfully downloaded "..LIBRARY) end)
-				DownloadFile("http://divinetek.rocks/divineprediction/DivinePred.luac", LIB_PATH.."DivinePred.luac",function() AutoupdaterMsg("Successfully downloaded "..LIBRARY) end)
-			else
-				AutoupdaterMsg("Missing Library! Downloading "..LIBRARY..". If the library doesn't download, please download it manually.")
-				DownloadFile(LIBRARY_URL,LIB_PATH..LIBRARY..".lua",function() AutoupdaterMsg("Successfully downloaded "..LIBRARY) end)
+local ToInterrupt = {}
+
+function OnLoad()
+	
+	VP		= VPrediction()
+	STS		= SimpleTS()
+	SxO		= SxOrbWalk()
+	
+	
+	LoadMenu()
+	
+	for i = 1, heroManager.iCount do 
+        local hero = heroManager:GetHero(i) 
+		for _, champ in pairs(InterruptList) do 
+			if hero.charName == champ.charName then 
+				table.insert(ToInterrupt, champ.spellName) 
+			end
+        end 
+    end 
+end
+
+function OnTick()
+	if Config.combo.active then
+		OnCombo()
+	elseif Config.harass.active then
+		OnHarass()
+	elseif Config.lc.active then
+		OnLineClear()
+	end
+	OnKillsteal()
+	OnSpellcheck()
+	if Config.ads.autor and Rready then
+		if player.health < (player.maxHealth*(Config.ads.autorper*0.01)) and countEnemy(player, 200) >= 1 then
+			CastSpell(_R, player)
+		end
+		for _, i in pairs (allyHeroes) do
+			if i.health < (i.maxHealth*(Config.ads.autorper*0.01)) and countEnemy(i, 200) >= 1 then
+				CastSpell(_R, i)
 			end
 		end
 	end
-	if DOWNLOADING_LIBS then return true end
-end
-if Initiate() then return end
-
-
-
-if VIP_USER then
- 	AdvancedCallback:bind('OnApplyBuff', function(source, unit, buff) OnApplyBuff(source, unit, buff) end)
-	AdvancedCallback:bind('OnRemoveBuff', function(unit, buff) OnRemoveBuff(unit, buff) end)
 end
 
-local qRange = 875
-local wRange = 1000
-local eRange = 425
-
-local Qready, Wready, Eready, Rready = nil, nil, nil, nil
-local useingE = false
-local EActive = false
-local recall = false
-local j, CanKillChampion
-local status
-local dead = false
-local player = myHero
-
-local ts
-local VP, SxO, dp = nil, nil, nil
-
-local EnemyHeroes = GetEnemyHeroes()
-
---require "SxOrbWalk"
-require "SourceLib"
-
-
-
-local enemyChamps = {}
-local enemyChampsCount = 0
-
-function OnOrbLoad()
-	if _G.MMA_LOADED then
-		AutoupdaterMsg("MMA LOAD")
-		MMALoad = true
-	elseif _G.AutoCarry then
-		if _G.AutoCarry.Helper then
-			AutoupdaterMsg("SIDA AUTO CARRY: REBORN LOAD")
-			RebornLoad = true
-		else
-			AutoupdaterMsg("SIDA AUTO CARRY: REVAMPED LOAD")
-			RevampedLoaded = true
-		end
-	elseif _G.Reborn_Loaded then
-		DelayAction(OnOrbLoad, 1)
-	elseif FileExist(LIB_PATH .. "SxOrbWalk.lua") then
-		AutoupdaterMsg("SxOrbWalk Load")
-		require 'SxOrbWalk'
-		SxO = SxOrbWalk()
-		SxOLoad = true
-	end
-end
-
-
-
-function OnLoad()
-
-	OnOrbLoad()
-
-	VP = VPrediction()
-	dp = DivinePred()
-	if SxOLoad then
-		SxO:DisableAttacks()
-	end
-
-	LoadMenu()
-	initialize()
-
-	DamageCalculator = DamageLib()
-	DamageCalculator:RegisterDamageSource(_Q, _MAGIC, 40, 20, _MAGIC, _AP, 0.30, myHero:CanUseSpell(_Q) == READY)
-
-	ts = TargetSelector(TARGET_LOW_HP_PRIORITY,wRange,DAMAGE_MAGIC, false)
-	enemyMinions = minionManager(MINION_ENEMY, 875, myHero, MINION_SORT_MAXHEALTH_DEC)
-
+function OnDraw()
+	if Config.draw.drawq then DrawCircle(player.x, player.y, player.z, Qrance, 0xffff0000) end
+	if Config.draw.draww then DrawCircle(player.x, player.y, player.z, Wrance, 0xffff0000) end
+	if Config.draw.drawe then DrawCircle(player.x, player.y, player.z, Erance, 0xffff0000) end
+	if Config.draw.drawr then DrawCircle(player.x, player.y, player.z, Rrance, 0xffff0000) end
 end
 
 function LoadMenu()
-	ConfigY = scriptConfig("SEAN Karthus", "Karthus")
-		ConfigY:addSubMenu("스킬콤보설정", "combo")
-			ConfigY.combo:addParam("activecombo", "콤보사용", SCRIPT_PARAM_ONKEYDOWN, false, 32)
-			ConfigY.combo:addParam("useq", "황폐화(Q)사용", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.combo:addParam("usew", "고통의벽(W)사용", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.combo:addParam("usee", "부패(E)사용", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.combo:addParam("pere", "고통의벽(W)마나%설정", SCRIPT_PARAM_SLICE, 0, 0, 100, 0)
-
-		ConfigY:addSubMenu("스킬파밍설정", "farm")
-			ConfigY.farm:addParam("farm", "파밍사용", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("V"))
-			ConfigY.farm:addParam("useq", "황폐화(Q)사용", SCRIPT_PARAM_ONOFF, true)
-
-		ConfigY:addSubMenu("견제스킬설정", "harass")
-			ConfigY.harass:addParam("harassactive", "견제키 설정", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("C"))
-			ConfigY.harass:addParam("harasstoggle", "버튼식 견제키", SCRIPT_PARAM_ONKEYTOGGLE, false, string.byte("X"))
-			ConfigY.harass:addParam("useq", "황폐화(Q)사용", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.harass:addParam("perq", "황폐화(Q)마나%설정", SCRIPT_PARAM_SLICE, 50, 0, 100, 0)
-			ConfigY.harass:addParam("usee", "부패(E)사용", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.harass:addParam("pere", "\184\182\179\170<N%\192\207\176\230\191\236\187\231\191\235\190\200\199\212", SCRIPT_PARAM_SLICE, 50, 0, 100, 0)
-			--ConfigY.harass:addParam("usew", "use W", SCRIPT_PARAM_ONOFF, true)
-			--ConfigY.harass:addParam("usee", "use E", SCRIPT_PARAM_ONOFF, true)
-
-		ConfigY:addSubMenu("프로딕션설정", "pred")
-			ConfigY.pred:addParam("choose", "프로딕션선택", SCRIPT_PARAM_LIST, 1, {"VPrediction", "DivinePred"})
-
-		ConfigY:addSubMenu("스틸모드설정", "killsteal")
-			ConfigY.killsteal:addParam("killstealmark", "황폐화(Q)킬스틸모드", SCRIPT_PARAM_ONOFF, true)
-			--ConfigY.killsteal:addParam("killstealq", "Killsteal Q Toggle", SCRIPT_PARAM_ONOFF, true)
-			--ConfigY.killsteal:addParam("killstealhitchance", "Killsteal hit chance", SCRIPT_PARAM_LIST, 1, {"1", "2", "3", "4", "5"})
-
-		ConfigY:addSubMenu("기타기능설정", "ads")
-			--ConfigY.ads:addParam("adsr", "Use R After You dead", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.ads:addParam("autoff", "부패(E)자동해제", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.ads:addParam("pa", "사망후자동스킬공격", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.ads:addParam("dm", "데미지기록", SCRIPT_PARAM_ONOFF, true)
-
-		ConfigY:addSubMenu("스킬범위설정", "draw")
-			ConfigY.draw:addParam("drawq", "황폐화(Q)표시", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.draw:addParam("draww", "고통의벽(W)표시", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.draw:addParam("drawe", "부패(E)표시", SCRIPT_PARAM_ONOFF, true)
-
-		if SxOLoad then
-			ConfigY:addSubMenu("오브워크설정", "orbWalk")
-				SxO:LoadToMenu(ConfigY.orbWalk)
-		ConfigY:addSubMenu("스크립트정보", "info")
-			ConfigY.info:addParam("infoproduce", "스크립트 \193\166\192\219\192\218 : SEAN", SCRIPT_PARAM_INFO, "")
-			ConfigY.info:addParam("infover", "스크립트 \185\246\192\252 : 1.28", 5, "")
-			ConfigY.info:addParam("infotrans", "\199\209\177\219\185\248\191\170 : SEAN", SCRIPT_PARAM_INFO, "")
-			ConfigY.info:addParam("infosite", "홈페이지 : Seanlol.com", SCRIPT_PARAM_INFO, "")
-			ConfigY.info:addParam("infokaka", "카카오톡 : seanlol", SCRIPT_PARAM_INFO, "")
-		end
-end
-
-function GetHPBarPos(enemy)
-	enemy.barData = {PercentageOffset = {x = -0.05, y = 0}}--GetEnemyBarData()
-	local barPos = GetUnitHPBarPos(enemy)
-	local barPosOffset = GetUnitHPBarOffset(enemy)
-	local barOffset = { x = enemy.barData.PercentageOffset.x, y = enemy.barData.PercentageOffset.y }
-	local barPosPercentageOffset = { x = enemy.barData.PercentageOffset.x, y = enemy.barData.PercentageOffset.y }
-	local BarPosOffsetX = 171
-	local BarPosOffsetY = 46
-	local CorrectionY = 39
-	local StartHpPos = 31
-
-	barPos.x = math.floor(barPos.x + (barPosOffset.x - 0.5 + barPosPercentageOffset.x) * BarPosOffsetX + StartHpPos)
-	barPos.y = math.floor(barPos.y + (barPosOffset.y - 0.5 + barPosPercentageOffset.y) * BarPosOffsetY + CorrectionY)
-
-	local StartPos = Vector(barPos.x , barPos.y, 0)
-	local EndPos =  Vector(barPos.x + 108 , barPos.y , 0)
-	return Vector(StartPos.x, StartPos.y, 0), Vector(EndPos.x, EndPos.y, 0)
-end
-
-function initialize()
-		for i = 1, heroManager.iCount do
-			local hero = heroManager:GetHero(i)
-			if hero.team ~= myHero.team then enemyChamps[""..hero.networkID] = DPTarget(hero)
-				enemyChampsCount = enemyChampsCount + 1
-			end
-		end
-	end
-
-function OnTick()
-	if myHero.dead then return end
-	OnCombo()
-	OnHarass()
-	OnSpellcheck()
-	Farm()
-	if CountEnemyHeroInRange(eRange) == 0 and EActive == true and Eready and ConfigY.ads.autoff then
-		CastSpell(_E)
-	end
-	if dead then
-		PassiveActive()
-	end
-end
-
-function PassiveActive()
-	ts:update()
-	if ts.target ~= nil and ConfigY.ads.pa then
-		if ConfigY.pred.choose == 1 then
-			local CastPosition, HitChance, Position = VP:GetCircularAOECastPosition(ts.target, 0.5, 75, 875, 1700, player)
-			if CastPosition and HitChance >= 2 and GetDistance(CastPosition) < 875 and ts.target.dead == false then
-				if Qready and ConfigY.combo.useq then
-					CastSpell(_Q, CastPosition.x, CastPosition.z)
-				end
-			end
-		elseif ConfigY.pred.choose == 2 then
-			local Target = DPTarget(ts.target)
-			local state,hitPos,perc = dp:predict(Target,CircleSS(math.huge,945,75,600,math.huge))
-			if state == SkillShot.STATUS.SUCCESS_HIT then
-				CastSpell(_Q,hitPos.x,hitPos.z)
-			end
-		end
-		if ConfigY.pred.choose == 1 then
-			local CastPosition, HitChance, Position = VP:GetCircularCastPosition(ts.target, 0.5, 10, 1000)
-			if CastPosition and HitChance >= 1 and GetDistance(CastPosition) < 1000 then
-				if Wready and ConfigY.combo.usew then
-					CastSpell(_W, CastPosition.x, CastPosition.z)
-				end
-			end
-		elseif ConfigY.pred.choose == 2 then
-			local Target = DPTarget(ts.target)
-			local state,hitPos,perc = dp:predict(Target,CircleSS(math.huge,1000,10,160,math.huge))
-			if state == SkillShot.STATUS.SUCCESS_HIT then
-				CastSpell(_W,hitPos.x,hitPos.z)
-			end
-		end
-	end
+	Config = MenuWrapper("[SEAN] " .. player.charName, "unique" .. player.charName:gsub("%s+", ""))
+	
+		Config:SetTargetSelector(STS)
+		Config = Config:GetHandle()
+		
+			Config:addSubMenu("오브워크설정", "orbwalk")
+			SxO:LoadToMenu(Config.orbwalk)
+			Config:addSubMenu("스킬콤보설정", "combo")
+			Config.combo:addParam("active", "스킬콤보사용", SCRIPT_PARAM_ONKEYDOWN, false, 32)
+			Config.combo:addParam("useq", "반짝반짝 창(Q)사용", SCRIPT_PARAM_ONOFF, true)
+			--Config.combo:addParam("usew", "변덕쟁이(W)사용", SCRIPT_PARAM_ONOFF, true)
+			Config.combo:addParam("usee", "도와줘픽스!(E)사용", SCRIPT_PARAM_ONOFF, true)
+			Config.combo:addParam("user", "급성장(R)사용", SCRIPT_PARAM_ONOFF, true)
+			
+		Config:addSubMenu("견제스킬설정", "harass")
+			Config.harass:addParam("active", "견제스킬사용", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("V"))
+			Config.harass:addParam("useq", "반짝반짝 창(Q)사용", SCRIPT_PARAM_ONOFF, true)
+			Config.harass:addParam("usew", "변덕쟁이(W)사용", SCRIPT_PARAM_ONOFF, true)
+			--Config.harass:addParam("usee", "도와줘픽스!(E)사용", SCRIPT_PARAM_ONOFF, true)
+			
+		Config:addSubMenu("라인클리어설정", "lc")
+			Config.lc:addParam("active", "라인클리어사용", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("X"))
+			Config.lc:addParam("useq", "반짝반짝 창(Q)사용", SCRIPT_PARAM_ONOFF, true)
+			
+		Config:addSubMenu("기타기능설정","ads")
+			--Config.ads:addParam("autow", "자동쉴드(E)사용", SCRIPT_PARAM_ONOFF, false)
+			Config.ads:addParam("interrupt", "스킬캔슬(W)사용", SCRIPT_PARAM_ONOFF, true)
+			Config.ads:addParam("smartr", "스마트궁(R)사용", SCRIPT_PARAM_SLICE, 2, 1, 5, 0)
+			Config.ads:addParam("autor", "자동급성장(R)사용", SCRIPT_PARAM_ONOFF, true)
+			Config.ads:addParam("autorper", "자동체력비례(R)%사용", SCRIPT_PARAM_SLICE, 30, 1, 100, 0)
+			
+		Config:addSubMenu("스킬범위설정", "draw")
+			Config.draw:addParam("drawq", "반짝반짝 창(Q)표시", SCRIPT_PARAM_ONOFF, true)
+			Config.draw:addParam("draww", "변덕쟁이(W)표시", SCRIPT_PARAM_ONOFF, true)
+			Config.draw:addParam("drawe", "도와줘픽스!(E)표시", SCRIPT_PARAM_ONOFF, true)
+			Config.draw:addParam("drawr", "급성장(R)표시", SCRIPT_PARAM_ONOFF, true)
+		Config:addSubMenu("스크립트정보", "info")
+			Config.info:addParam("infoproduce", "스크립트 \193\166\192\219\192\218 : SEAN", SCRIPT_PARAM_INFO, "")
+			Config.info:addParam("infover", "스크립트 \185\246\192\252 : 1.28", 5, "")
+			Config.info:addParam("infotrans", "\199\209\177\219\185\248\191\170 : SEAN", SCRIPT_PARAM_INFO, "")
+			Config.info:addParam("infosite", "홈페이지 : Seanlol.com", SCRIPT_PARAM_INFO, "")
+			Config.info:addParam("infokaka", "카카오톡 : seanlol", SCRIPT_PARAM_INFO, "")
 end
 
 function OnCombo()
-	ts:update()
-	if ts.target ~= nil then
-		if ConfigY.combo.activecombo then
-			if ConfigY.pred.choose == 1 and ConfigY.combo.useq then
-				local CastPosition, HitChance, Position = VP:GetCircularAOECastPosition(ts.target, 0.5, 75, 875, 1700, player)
-				if CastPosition and HitChance >= 2 and GetDistance(CastPosition) < 875 and ts.target.dead == false then
-					if Qready and ConfigY.combo.useq then
-						CastSpell(_Q, CastPosition.x, CastPosition.z)
-					end
-				end
-			elseif ConfigY.pred.choose == 2 and ConfigY.combo.useq then
-				local Target = DPTarget(ts.target)
-				local state,hitPos,perc = dp:predict(Target,CircleSS(math.huge,945,75,600,math.huge))
-				if state == SkillShot.STATUS.SUCCESS_HIT then
-					CastSpell(_Q,hitPos.x,hitPos.z)
-				end
+	local Target = STS:GetTarget(Qrance)
+	if Target ~= nil then
+		if Config.combo.usee and Eready then
+			CastSpell(_E, Target)
+		end
+		if Config.combo.useq and GetDistance(Target, player) < Qrance then
+			local CastPosition, HitChance, Position = VP:GetLineCastPosition(Target, 0.25,60,950, 1600, myHero, false)
+			if CastPosition and HitChance >= 2 then
+				CastSpell(_Q, CastPosition.x, CastPosition.z)
 			end
-			if ConfigY.pred.choose == 1 and ConfigY.combo.usew then
-				local CastPosition, HitChance, Position = VP:GetCircularCastPosition(ts.target, 0.5, 10, 1000)
-				if CastPosition and HitChance >= 1 and GetDistance(CastPosition) < 1000 then
-					if Wready and ConfigY.combo.usew then
-						CastSpell(_W, CastPosition.x, CastPosition.z)
-					end
-				end
-			elseif ConfigY.pred.choose == 2 and ConfigY.combo.usew then
-				local Target = DPTarget(ts.target)
-				local state,hitPos,perc = dp:predict(Target,CircleSS(math.huge,1000,10,160,math.huge))
-					if state == SkillShot.STATUS.SUCCESS_HIT  then
-						CastSpell(_W,hitPos.x,hitPos.z)
-					end
-			end
-			if CountEnemyHeroInRange(eRange) >= 1 and EActive == false and Eready and myHero.mana >= (myHero.maxMana*(ConfigY.combo.pere*0.01)) and ConfigY.combo.usee then
-				CastSpell(_E)
-			end
+		end
+		if Config.combo.user and Rready then
+			SamrtR()
 		end
 	end
 end
 
 function OnHarass()
-	if ConfigY.harass.harasstoggle and recall == false or ConfigY.harass.harassactive then
-		ts:update()
-		if ts.target ~= nil then
-			if ConfigY.pred.choose == 1 then
-				local CastPosition, HitChance, Position = VP:GetCircularAOECastPosition(ts.target, 0.5, 75, 875, 1700, player)
-				if CastPosition and HitChance >= 2 and GetDistance(CastPosition) < 875 and ts.target.dead == false then
-					if Qready and ConfigY.harass.useq and myHero.mana > (myHero.maxMana*(ConfigY.harass.perq*0.01)) then
-						CastSpell(_Q, CastPosition.x, CastPosition.z)
-					end
-				end
-			elseif ConfigY.pred.choose == 2 then
-				local Target = DPTarget(ts.target)
-				local state,hitPos,perc = dp:predict(Target,CircleSS(math.huge,945,75,600,math.huge))
-				if state == SkillShot.STATUS.SUCCESS_HIT and Qready and ConfigY.harass.useq and myHero.mana > (myHero.maxMana*(ConfigY.harass.perq*0.01)) then
-					CastSpell(_Q,hitPos.x,hitPos.z)
+	local Target = STS:GetTarget(Qrance+Erance)
+	if Target ~= nil then
+		if GetDistance(Target, player) < Qrance then
+			if Config.harass.usew and Eready then
+				CastSpell(_W, Target)
+			end
+			if Config.harass.useq and Qrance then
+				local CastPosition, HitChance, Position = VP:GetLineCastPosition(Target, 0.25,60,950, 1600, myHero, false)
+				if CastPosition and HitChance >= 2 then
+					CastSpell(_Q, CastPosition.x, CastPosition.z)
 				end
 			end
-			if ConfigY.harass.usee and CountEnemyHeroInRange(eRange) >= 1 and EActive == false and Eready and myHero.mana >= (myHero.maxMana*(ConfigY.harass.pere*0.01)) then
-				CastSpell(_E)
+		elseif GetDistance(Target, player) < Qrance+Erance then
+			SmartW(Target)
+			local CastPosition, HitChance, Position = VP:GetLineCastPosition(Target, 0.25,60,950, 1600, myHero, false)
+			if CastPosition and HitChance >= 2 then
+				DelayAction(function() CastSpell(_Q, CastPosition.x, CastPosition.z) end, 0.5)
 			end
+		end
+	end
+end
 
-			if CountEnemyHeroInRange(eRange) == 0 and EActive and Eready then
-				CastSpell(_E)
+function OnLineClear()
+	enemyMinions:update()
+	local minion
+	for _, minion in pairs(enemyMinions.objects) do
+		if Config.lc.useq then
+			local CastPosition, HitChance, Position = VP:GetLineCastPosition(minion, 0.25,60,950, 1600, myHero, false)
+			if CastPosition and HitChance >= 2 then
+				CastSpell(_Q, CastPosition.x, CastPosition.z)
 			end
+		end
+	end
+end
+
+function SamrtR()
+	if Rready then
+		if countEnemy(player, 200) >= Config.ads.smartr then
+			CastSpell(_R, player)
+		end
+		for _, i in pairs (allyHeroes) do
+			if countEnemy(i, 200) >= Config.ads.smartr and GetDistance(i, player) < Rrance then
+				CastSpell(_R, i)
+			end
+		end
+	end
+end
+
+function countEnemy(allyHero, range)
+	local nearEnemy = 0
+	for i, e in pairs(enemyHeroes) do
+		if GetDistance(allyHero, e) < range then
+			nearEnemy = nearEnemy + 1
+		end
+	end
+	return nearEnemy
+end
+
+function OnKillsteal()
+end
+
+function SmartW(target)
+	enemyMinions:update()
+	for i, minion in pairs(enemyMinions.objects) do
+		if GetDistance(minion, player) < Erance and GetDistance(minion, target) < Qrance and getDmg("E", minion, player) < minion.health and minion ~= nil then
+			CastSpell(_E, minion)
 		end
 	end
 end
@@ -437,19 +250,19 @@ function OnSpellcheck()
 	else
 		Qready = false
 	end
-
+	
 	if myHero:CanUseSpell(_W) == READY then
 		Wready = true
 	else
 		Wready = false
 	end
-
+	
 	if myHero:CanUseSpell(_E) == READY then
 		Eready = true
 	else
 		Eready = false
 	end
-
+	
 	if myHero:CanUseSpell(_Q) == READY then
 		Rready = true
 	else
@@ -457,111 +270,12 @@ function OnSpellcheck()
 	end
 end
 
-function OnDraw()
-	if ConfigY.draw.drawq then
-		DrawCircle(myHero.x, myHero.y, myHero.z, 875, 0xFFFFCC)
-	end
-	if ConfigY.draw.draww then
-		DrawCircle(myHero.x, myHero.y, myHero.z, 1000, 0xFFFF0000)
-	end
-	if ConfigY.draw.drawe then
-		DrawCircle(myHero.x, myHero.y, myHero.z, 475, 0xFFFFFFff)
-	end
-	if ConfigY.killsteal.killstealmark then
-		for j, CanKillChampion in pairs(EnemyHeroes) do
-			if stat(CanKillChampion) == "Can" then
-				DrawText(CanKillChampion.charName.." 진혼곡(R)사망여부 | "..stat(CanKillChampion), 18, 100, 100+j*20, 0xFFFF0000)
-			elseif stat(CanKillChampion) == "Cant" or stat(CanKillChampion) == "Dead" then
-				DrawText(CanKillChampion.charName.." 진혼곡(R)사망여부 | "..stat(CanKillChampion), 18, 100, 100+j*20, 0xFFFFFF00)
+function OnProcessSpell(unit, spell)
+	if #ToInterrupt > 0 and WReady then
+		for _, ability in pairs(ToInterrupt) do
+			if spell.name == ability and unit.team ~= myHero.team and GetDistance(unit) < SpellW.Range then
+				CastSpell(_W, unit.x, unit.z)
 			end
 		end
-	end
-	for i, j in ipairs(GetEnemyHeroes()) do
-		if GetDistance(j) < 2000 and not j.dead and ConfigY.ads.dm then
-			local pos = GetHPBarPos(j)
-			local dmg, Qdamage = GetSpellDmg(j)
-			if dmg == "CanComboKill" then
-				DrawText("Can Combo Kill!",18 , pos.x, pos.y-48, 0xffff0000)
-			else
-				local pos2 = ((j.health - dmg)/j.maxHealth)*100
-				DrawLine(pos.x+pos2, pos.y, pos.x+pos2, pos.y-30, 1, 0xffff0000)
-				local hit = tostring(math.ceil(j.health/Qdamage))
-				DrawText("Q hit : "..hit,18 , pos.x, pos.y-48, 0xffff0000)
-			end
-		end
-	end
-end
-
-function GetSpellDmg(enemy)
-	local combodmg
-	local Qdmg = getDmg("Q", enemy, player)
-	local Edmg = getDmg("E", enemy, player)
-	local Rdmg = getDmg("R", enemy, player)
-	if enemy.health < Qdmg+Edmg+Rdmg then
-		combodmg = "CanComboKill"
-		return combodmg
-	else
-		combodmg = Qdmg+Edmg+Rdmg
-		return combodmg, Qdmg
-	end
-end
-
-function stat(unit)
-	if getDmg("R", unit, myHero) > unit.health and not unit.dead then
-		status = "Can"
-	else
-		status = "Cant"
-	end
-	if unit.dead then
-		status = "dead"
-	end
-	return status
-end
-
-function Farm()
-	if ConfigY.farm.farm then
-		enemyMinions:update()
-		for i, minion in ipairs(enemyMinions.objects) do
-			if GetDistance(minion) <= 875 and myHero:CanUseSpell(_Q) == READY and getDmg("Q", minion, myHero)*0.75 > minion.health and ConfigY.farm.useq then
-				if ConfigY.pred.choose == 1 then
-					local CastPosition, HitChance, Position = VP:GetCircularAOECastPosition(minion, 0.5, 75, 875, 1700, player)
-					if CastPosition and HitChance >= 2 then
-						if Qready then
-							CastSpell(_Q, CastPosition.x, CastPosition.z)
-						end
-					end
-				elseif ConfigY.pred.choose == 2 then
-					local Target = DPTarget(minion)
-					local state,hitPos,perc = dp:predict(Target,CircleSS(math.huge,845,75,600,math.huge))
-					if state == SkillShot.STATUS.SUCCESS_HIT then
-						CastSpell(_Q,hitPos.x,hitPos.z)
-					end
-				end
-			end
-		end
-	end
-end
-
-function OnApplyBuff(source, unit, buff)
-	if unit and unit.isMe and buff.name == "KarthusDefile" then
-		EActive = true
-    end
-	if unit and unit.isMe and buff.name == "recall" then
-		recall = true
-    end
-	if unit and unit.isMe and buff.name == "KarthusDeathDefiedBuff" then
-		dead = true
-	end
-end
-
-function OnRemoveBuff(unit, buff)
-    if unit and unit.isMe and buff.name == "KarthusDefile" then
-        EActive = false
-    end
-	if unit and unit.isMe and buff.name == "recall" then
-		recall = false
-    end
-	if unit and unit.isMe and buff.name == "KarthusDeathDefiedBuff" then
-		dead = false
 	end
 end

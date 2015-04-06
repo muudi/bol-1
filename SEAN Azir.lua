@@ -8,11 +8,12 @@ require "SxOrbWalk"
 local version = 1.02
 local AUTO_UPDATE = true
 local UPDATE_HOST = "raw.github.com"
-local UPDATE_PATH = "/seanlol/bol/master/Your Azirlua".."?rand="..math.random(1,10000)
+local UPDATE_PATH = "/seanlol/bol/master/SEAN Azir.lua".."?rand="..math.random(1,10000)
 local UPDATE_FILE_PATH = LIB_PATH.."SEAN Azir.lua"
 local UPDATE_URL = "https://"..UPDATE_HOST..UPDATE_PATH
 
 local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>SEAN Azir:</b></font> <font color=\"#FFFFFF\">"..msg..".</font>") end
+local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>Welcome " .. GetUser() .. " Auth Successed By http://seanlol.com Have Good Game. </b>")end
 if AUTO_UPDATE then
 	local ServerData = GetWebResult(UPDATE_HOST, "/seanlol/bol/master/SEAN Azir.version")
 	if ServerData then

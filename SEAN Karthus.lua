@@ -101,17 +101,19 @@ v. 1.28
 
 
 
-local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>Your Karthus:</b></font> <font color=\"#FFFFFF\">"..msg..".</font>") end
+local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>SEAN Karthus:</b></font> <font color=\"#FFFFFF\">"..msg..".</font>") end
+local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>Welcome " .. GetUser() .. " Auth Successed By http://seanlol.com Have Good Game. </b>")end
+
 
 local version = 1.28
 local AUTO_UPDATE = true
 local UPDATE_HOST = "raw.github.com"
-local UPDATE_PATH = "/seanlol/bol/master/Your Karthus.lua".."?rand="..math.random(1,10000)
-local UPDATE_FILE_PATH = LIB_PATH.."Your Karthus.lua"
+local UPDATE_PATH = "/seanlol/bol/master/SEAN Karthus.lua".."?rand="..math.random(1,10000)
+local UPDATE_FILE_PATH = LIB_PATH.."SEAN Karthus.lua"
 local UPDATE_URL = "https://"..UPDATE_HOST..UPDATE_PATH
 
 if AUTO_UPDATE then
-	local ServerData = GetWebResult(UPDATE_HOST, "/seanlol/bol/master/Your Karthus.version")
+	local ServerData = GetWebResult(UPDATE_HOST, "/seanlol/bol/master/SEAN Karthus.version")
 	if ServerData then
 		ServerVersion = type(tonumber(ServerData)) == "number" and tonumber(ServerData) or nil
 		if ServerVersion then
@@ -232,50 +234,56 @@ function OnLoad()
 end
 
 function LoadMenu()
-	ConfigY = scriptConfig("Your Karthus", "Karthus")
-		ConfigY:addSubMenu("combo", "combo")
-			ConfigY.combo:addParam("activecombo", "combo", SCRIPT_PARAM_ONKEYDOWN, false, 32)
-			ConfigY.combo:addParam("useq", "use Q", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.combo:addParam("usew", "use W", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.combo:addParam("usee", "use E", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.combo:addParam("pere", "Until % use W", SCRIPT_PARAM_SLICE, 0, 0, 100, 0)
+	ConfigY = scriptConfig("SEAN Karthus", "Karthus")
+		ConfigY:addSubMenu("스킬콤보설정", "combo")
+			ConfigY.combo:addParam("activecombo", "콤보사용", SCRIPT_PARAM_ONKEYDOWN, false, 32)
+			ConfigY.combo:addParam("useq", "황폐화(Q)사용", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.combo:addParam("usew", "고통의벽(W)사용", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.combo:addParam("usee", "부패(E)사용", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.combo:addParam("pere", "고통의벽(W)마나%설정", SCRIPT_PARAM_SLICE, 0, 0, 100, 0)
 
-		ConfigY:addSubMenu("farm", "farm")
-			ConfigY.farm:addParam("farm", "farm", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("V"))
-			ConfigY.farm:addParam("useq", "use Q", SCRIPT_PARAM_ONOFF, true)
+		ConfigY:addSubMenu("스킬파밍설정", "farm")
+			ConfigY.farm:addParam("farm", "파밍사용", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("V"))
+			ConfigY.farm:addParam("useq", "황폐화(Q)사용", SCRIPT_PARAM_ONOFF, true)
 
-		ConfigY:addSubMenu("harass", "harass")
-			ConfigY.harass:addParam("harassactive", "harass", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("C"))
-			ConfigY.harass:addParam("harasstoggle", "harass Toggle", SCRIPT_PARAM_ONKEYTOGGLE, false, string.byte("X"))
-			ConfigY.harass:addParam("useq", "use Q", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.harass:addParam("perq", "Until % Q", SCRIPT_PARAM_SLICE, 50, 0, 100, 0)
-			ConfigY.harass:addParam("usee", "use E", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.harass:addParam("pere", "Until % E", SCRIPT_PARAM_SLICE, 50, 0, 100, 0)
+		ConfigY:addSubMenu("견제스킬설정", "harass")
+			ConfigY.harass:addParam("harassactive", "견제키 설정", SCRIPT_PARAM_ONKEYDOWN, false, string.byte("C"))
+			ConfigY.harass:addParam("harasstoggle", "버튼식 견제키", SCRIPT_PARAM_ONKEYTOGGLE, false, string.byte("X"))
+			ConfigY.harass:addParam("useq", "황폐화(Q)사용", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.harass:addParam("perq", "황폐화(Q)마나%설정", SCRIPT_PARAM_SLICE, 50, 0, 100, 0)
+			ConfigY.harass:addParam("usee", "부패(E)사용", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.harass:addParam("pere", "\184\182\179\170<N%\192\207\176\230\191\236\187\231\191\235\190\200\199\212", SCRIPT_PARAM_SLICE, 50, 0, 100, 0)
 			--ConfigY.harass:addParam("usew", "use W", SCRIPT_PARAM_ONOFF, true)
 			--ConfigY.harass:addParam("usee", "use E", SCRIPT_PARAM_ONOFF, true)
 
-		ConfigY:addSubMenu("Prediction", "pred")
-			ConfigY.pred:addParam("choose", "Chooes Type", SCRIPT_PARAM_LIST, 1, {"VPrediction", "DivinePred"})
+		ConfigY:addSubMenu("프로딕션설정", "pred")
+			ConfigY.pred:addParam("choose", "프로딕션선택", SCRIPT_PARAM_LIST, 1, {"VPrediction", "DivinePred"})
 
-		ConfigY:addSubMenu("killsteal", "killsteal")
-			ConfigY.killsteal:addParam("killstealmark", "Killsteal Mark", SCRIPT_PARAM_ONOFF, true)
+		ConfigY:addSubMenu("스틸모드설정", "killsteal")
+			ConfigY.killsteal:addParam("killstealmark", "황폐화(Q)킬스틸모드", SCRIPT_PARAM_ONOFF, true)
 			--ConfigY.killsteal:addParam("killstealq", "Killsteal Q Toggle", SCRIPT_PARAM_ONOFF, true)
 			--ConfigY.killsteal:addParam("killstealhitchance", "Killsteal hit chance", SCRIPT_PARAM_LIST, 1, {"1", "2", "3", "4", "5"})
 
-		ConfigY:addSubMenu("ads", "ads")
+		ConfigY:addSubMenu("기타기능설정", "ads")
 			--ConfigY.ads:addParam("adsr", "Use R After You dead", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.ads:addParam("autoff", "E Auto Off", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.ads:addParam("pa", "Passive Active Auto Attack", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.ads:addParam("dm", "Damage Manager", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.ads:addParam("autoff", "부패(E)자동해제", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.ads:addParam("pa", "사망후자동스킬공격", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.ads:addParam("dm", "데미지기록", SCRIPT_PARAM_ONOFF, true)
 
-		ConfigY:addSubMenu("draw", "draw")
-			ConfigY.draw:addParam("drawq", "draw Q", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.draw:addParam("draww", "draw W", SCRIPT_PARAM_ONOFF, true)
-			ConfigY.draw:addParam("drawe", "draw E", SCRIPT_PARAM_ONOFF, true)
-		
+		ConfigY:addSubMenu("스킬범위설정", "draw")
+			ConfigY.draw:addParam("drawq", "황폐화(Q)표시", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.draw:addParam("draww", "고통의벽(W)표시", SCRIPT_PARAM_ONOFF, true)
+			ConfigY.draw:addParam("drawe", "부패(E)표시", SCRIPT_PARAM_ONOFF, true)
+
 		if SxOLoad then
-			ConfigY:addSubMenu("orbWalk", "orbWalk")
+			ConfigY:addSubMenu("오브워크설정", "orbWalk")
 				SxO:LoadToMenu(ConfigY.orbWalk)
+		ConfigY:addSubMenu("스크립트정보", "info")
+			ConfigY.info:addParam("infoproduce", "스크립트 \193\166\192\219\192\218 : SEAN", SCRIPT_PARAM_INFO, "")
+			ConfigY.info:addParam("infover", "스크립트 \185\246\192\252 : 1.28", 5, "")
+			ConfigY.info:addParam("infotrans", "\199\209\177\219\185\248\191\170 : SEAN", SCRIPT_PARAM_INFO, "")
+			ConfigY.info:addParam("infosite", "홈페이지 : Seanlol.com", SCRIPT_PARAM_INFO, "")
+			ConfigY.info:addParam("infokaka", "카카오톡 : seanlol", SCRIPT_PARAM_INFO, "")
 		end
 end
 
@@ -462,9 +470,9 @@ function OnDraw()
 	if ConfigY.killsteal.killstealmark then
 		for j, CanKillChampion in pairs(EnemyHeroes) do
 			if stat(CanKillChampion) == "Can" then
-				DrawText(CanKillChampion.charName.." can kill with R? | "..stat(CanKillChampion), 18, 100, 100+j*20, 0xFFFF0000)
-			elseif stat(CanKillChampion) == "Cant" or stat(CanKillChampion) == "dead" then
-				DrawText(CanKillChampion.charName.." can kill with R? | "..stat(CanKillChampion), 18, 100, 100+j*20, 0xFFFFFF00)
+				DrawText(CanKillChampion.charName.." 진혼곡(R)사망여부 | "..stat(CanKillChampion), 18, 100, 100+j*20, 0xFFFF0000)
+			elseif stat(CanKillChampion) == "Cant" or stat(CanKillChampion) == "Dead" then
+				DrawText(CanKillChampion.charName.." 진혼곡(R)사망여부 | "..stat(CanKillChampion), 18, 100, 100+j*20, 0xFFFFFF00)
 			end
 		end
 	end

@@ -26,7 +26,6 @@ local UPDATE_FILE_PATH = LIB_PATH.."SEAN Mundo.lua"
 local UPDATE_URL = "https://"..UPDATE_HOST..UPDATE_PATH
 
 local function AutoupdaterMsg(msg) print("<font color=\"#6699ff\"><b>SEAN Mundo:</b></font> <font color=\"#FFFFFF\">"..msg..".</font>") end
-print("<font color=\"#6699ff\"><b>Welcome " .. GetUser() .. " Auth Successed By http://seanlol.com Have Good Game. </b>")end
 if AUTO_UPDATE then
 	local ServerData = GetWebResult(UPDATE_HOST, "/seanlol/bol/master/SEAN Mundo.version")
 	if ServerData then
@@ -101,7 +100,7 @@ function LoadMenu()
 			SxO:LoadToMenu(Config.orbWalk)
 		Config:addSubMenu("스크립트정보", "info")
 			Config.info:addParam("infoproduce", "스크립트 \193\166\192\219\192\218 : SEAN", SCRIPT_PARAM_INFO, "")
-			Config.info:addParam("infover", "스크립트 \185\246\192\252 : 1.04", 5, "")
+			Config.info:addParam("infover", "스크립트 \185\246\192\252 : 1.05", 5, "")
 			Config.info:addParam("infotrans", "\199\209\177\219\185\248\191\170 : SEAN", SCRIPT_PARAM_INFO, "")
 			Config.info:addParam("infosite", "홈페이지 : Seanlol.com", SCRIPT_PARAM_INFO, "")
 			Config.info:addParam("infokaka", "카카오톡 : seanlol", SCRIPT_PARAM_INFO, "")

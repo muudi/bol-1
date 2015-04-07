@@ -5,7 +5,8 @@ if myHero.charName ~= "Corki" then
   return
 end
 
-require 'HPrediction'
+require 'SEANPredict'
+require "SxOrbWalk"
 
 function ScriptMsg(msg)
   print("<font color=\"#daa520\"><b>SEAN Corki:</b></font> <font color=\"#FFFFFF\">"..msg.."</font>")
@@ -66,6 +67,7 @@ end
 ---------------------------------------------------------------------------------
 
 function OnLoad()
+SxO = SxOrbWalk()
 
   Variables()
   CorkiMenu()
@@ -74,7 +76,7 @@ end
 
 function Variables()
 
-  HPred = HPrediction()
+  SEANPred = SEANPredict()
   
   if myHero:GetSpellData(SUMMONER_1).name:find("summonerdot") then
     Ignite = SUMMONER_1
@@ -320,7 +322,8 @@ function CorkiMenu()
   
   Menu:addSubMenu("도주모두설정", "Flee")
     Menu.Flee:addParam("On", "도주(킬스틸모드만 작동)", SCRIPT_PARAM_ONKEYDOWN, false, GetKey('G'))
-    
+  Menu:addSubMenu("오브워크설정", "orbWalk")
+	SxO:LoadToMenu(Menu.orbWalk)    
   if VIP_USER then
   Menu:addSubMenu("패킷사용여부", "Misc")
     Menu.Misc:addParam("UsePacket", "패킷 사용", SCRIPT_PARAM_ONOFF, true)
@@ -355,7 +358,12 @@ function CorkiMenu()
     Menu.Draw:addParam("Path", "이동경로표시", SCRIPT_PARAM_ONOFF, false)
       Menu.Draw:addParam("Blank", "", SCRIPT_PARAM_INFO, "")
     Menu.Draw:addParam("Hitchance", "Draw Hitchance", SCRIPT_PARAM_ONOFF, true)
-    
+    Menu:addSubMenu("스크립트정보", "info")
+	Menu.info:addParam("infoproduce", "스크립트 \193\166\192\219\192\218 : SEAN", SCRIPT_PARAM_INFO, "")
+	Menu.info:addParam("infover", "스크립트 \185\246\192\252 : 1.2", 5, "")
+	Menu.info:addParam("infotrans", "\199\209\177\219\185\248\191\170 : SEAN", SCRIPT_PARAM_INFO, "")
+	Menu.info:addParam("infosite", "홈페이지 : Seanlol.com", SCRIPT_PARAM_INFO, "")
+	Menu.info:addParam("infokaka", "카카오톡 : seanlol", SCRIPT_PARAM_INFO, "")
 end
 
 ---------------------------------------------------------------------------------
@@ -1099,7 +1107,7 @@ end
 
 function CastQ(unit, mode)
 
-  QPos, QHitChance = HPred:GetPredict("Q", unit, myHero)
+  QPos, QHitChance = SEANPred:GetPredict("Q", unit, myHero)
   
   if mode == "Combo" and QHitChance >= Menu.HitChance.Combo.Q or mode == "Harass" and QHitChance >= Menu.HitChance.Harass.Q or mode == nil and QHitChance >= 1 then
   
@@ -1117,7 +1125,7 @@ end
 
 function CastR(unit)
 
-  RPos, RHitChance = HPred:GetPredict("R", unit, myHero)
+  RPos, RHitChance = SEANPred:GetPredict("R", unit, myHero)
   
   if mode == "Combo" and RHitChance >= Menu.HitChance.Combo.R or mode == nil and RHitChance >= 1 then
   

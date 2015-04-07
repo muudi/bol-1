@@ -1,2 +1,3 @@
-Server = "SEAN:사용가능"
-SEANPred = "SEAN:사용가능"
+Server = "활성화"
+SEANPred = "활성화"
+Notice = "공지"
